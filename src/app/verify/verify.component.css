@@ -1,0 +1,89 @@
+#Containerlogin {
+  background-color: #B2CFC6;
+  width: 300px;
+  height: 400px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+#login{
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+}
+
+input{
+  /*margin-top:40px ;*/
+  height: 100%;
+  width:100%;
+  background-color: #00001A;
+  border-top: none;
+  color: #fefefe;
+
+}
+::placeholder{
+  color: white;
+  font-family: -apple-system;
+  font-size: 15px;
+}
+.field2{
+  height: 40px;
+  margin: 40px 20px 0px 20px;
+}
+.logintitle{
+  margin-left: 90px;
+  font-family:CourierThai;
+  font-size: 40px;
+  color: black;
+}
+.field1{
+  height: 40px;
+  margin: 0px 20px 0px 20px;
+}
+.btnlogin{
+
+}
+.btn{
+  color:white ;
+  background-color:#201539;
+  margin-left: 110px;
+
+  margin-top: 40px;
+}
+
+/*input:hover{*/
+/*border: 2px solid blue;*/
+/*}*/
+.field1:hover.field2:hover{
+  border: 2px solid #201539;
+}
+
+#Email{
+
+}
+
+#Pass{
+
+}
+#login a{
+  /*margin-top: 300px;*/
+  /*cursor: pointer;*/
+  color: black;
+  font-family: "Lucida Bright";
+
+  margin-left: 10px;
+}
+#login a:hover{
+  cursor: pointer;
+  color: #2b608b;
+
+  margin-left: 10px;
+}
+
+
+.close{
+  font-weight: bold;
+  /*width: 2%;*/
+  margin-left: 85%;
+  padding: 10px;
+  /*background-color: darkslateblue;*/
+}

@@ -1,0 +1,66 @@
+<div class="bh">
+<div class="row hb">
+<!--  signupwindows-->
+  <div class="usiginupwin" id="singupup">
+
+    <app-user-sign-up></app-user-sign-up>
+  </div>
+
+  <div class="loginwin" id="asingupup">
+
+    <app-admin-sign-up></app-admin-sign-up>
+  </div>
+
+<!--  verify window-->
+<!--  <div class="verifywin" id="verify">-->
+<!---->
+<app-codetodo></app-codetodo>
+<!--  </div>-->
+  <div class="adverifywin" id="adverify">
+    <!---->
+    <app-admincodetodo></app-admincodetodo>
+  </div>
+<!--login window-->
+  <div class="loginwin" id="loginin">
+    <app-login></app-login>
+
+  </div>
+
+  <div class="loginwin" id="aloginin">
+    <app-adminlogin></app-adminlogin>
+
+  </div>
+
+
+
+</div>
+
+
+
+<div class="row container home">
+  <div class="panel col-lg-12">
+    <div class="row">
+  <div class="col-lg-6 userpanel">
+<button class="btn btn-primary loginbutton" onclick="displaylogin()" >USER LOGIN
+  <a ></a>
+</button>
+    <button class="btn btn-dark signupbutton" onclick="displaysinup()">USER SIGNUP
+      <a ></a>
+    </button>
+  </div>
+
+  <div class="col-lg-6 adminpanel">
+    <button class="btn btn-primary loginbutton" onclick="displayalogin()">ADMIN LOGIN
+      <a ></a>
+    </button>
+
+    <button class="btn btn-dark signupbutton" onclick="displayasinup()">ADMIN SIGNUP
+      <a ></a>
+    </button>
+  </div>
+  </div>
+  </div>
+</div>
+<button class="btn btn-primary">check</button>
+<!--<app-user-home></app-user-home>-->
+</div>

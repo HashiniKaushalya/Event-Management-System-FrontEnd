@@ -1,0 +1,147 @@
+<div class="row container">
+  <div class="col-md-12 event">
+    <form name="form" (ngSubmit)="f.form.valid &&onsubmit()" #f="ngForm" class="needs-validation" novalidate>
+
+
+      <div class="col-md-12">
+
+
+<!--            <label for="validationTooltip01">First name</label>-->
+<!--            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name"  required>-->
+<!--            <div class="valid-tooltip">-->
+<!--              Looks good!-->
+<!--            </div>-->
+
+        <div class="form-group">
+          <label for="eventname">event</label>
+
+<!--            <input  type="text" class="form-control " name="eventname" [(ngModel)]="form.eventname" #eventname="ngModel"-->
+<!--                   placeholder="eventname"   required />-->
+<!--          <div class="valid-tooltip">-->
+<!--            Please enter a message in the textarea.-->
+<!--          </div>-->
+<!--            <div *ngIf="f.submitted && eventname.invalid">-->
+<!--              <div *ngIf="eventname.errors.required">eventname is required</div>-->
+
+<!--            </div>-->
+          <div class="col-auto my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect"[(ngModel)]="form.event" name="eventname" >
+<!--              <option selected>Choose event type.</option>-->
+              <option value="1">conferance</option>
+              <option value="2">sports</option>
+              <option value="3">compitition</option>
+              <option value="3">culture</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="venue">venue place</label>
+
+<!--            <input  type="text"  name="venue" class="form-control" [(ngModel)]="form.venue" #venue="ngModel"-->
+<!--                   required   placeholder="Enter venue"/>-->
+<!--            <div *ngIf="f.submitted && venue.invalid">-->
+<!--              <div *ngIf="venue.errors.required">venue is required</div>-->
+
+<!--            </div>-->
+          <div class="col-auto my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" [(ngModel)]="form.venue" name="venue">
+<!--              <option selected>Choose event place.</option>-->
+              <option value="1">aditoriam</option>
+              <option value="2">lagan</option>
+              <option value="3">canteen</option>
+              <option value="3">old gym</option>
+            </select>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="form-group">
+        <label for="time">time</label>
+
+            <input type="time" class="form-control"  name="time" [(ngModel)]="form.time" #time="ngModel"
+                   required  placeholder="Enter time"/>
+            <div *ngIf="f.submitted && time.invalid">
+              <div *ngIf="time.errors.required">description is required</div>
+
+            </div>
+
+
+        </div>
+        <div class="form-group">
+
+            <label for="date">date</label>
+
+            <input type="date"  name="date" class="form-control"[(ngModel)]="form.date" #date="ngModel"
+                   required  placeholder="date"/>
+            <div *ngIf="f.submitted && date.invalid">date required </div>
+
+
+        </div>
+      <!--</div>-->
+      <!--<div class="col-md-6">-->
+        <div class="form-group">
+
+            <label for="faculty">name</label>
+
+            <input type="text" class="form-control" name="details" [(ngModel)]="form.name" #details="ngModel"
+                   required   placeholder="Enter title"/>
+            <div *ngIf="f.submitted &&details.invalid">
+              <div *ngIf="details.errors.required">details is required</div>
+
+            </div>
+
+
+        </div>
+        <div class="form-group">
+
+            <label for="details">details</label>
+
+            <textarea type="text"  class="form-control" name="name" [(ngModel)]="form.details" #name="ngModel"
+                      required   placeholder="Enter details"></textarea>
+            <div *ngIf="f.submitted && name.invalid">
+              <div *ngIf="name.errors.required">name is required</div>
+
+            </div>
+
+
+        </div>
+        <!--<div class="form-group">-->
+
+            <!--<label for="usefor"></label>-->
+
+            <!--<input matInput type="text" class="form-control" name="usefor" [(ngModel)]="form.usefor" #usefor="ngModel"-->
+                   <!--required  matInput placeholder="Enter usefor"/>-->
+            <!--<div *ngIf="f.submitted && usefor.invalid">-->
+              <!--<div *ngIf="usefor.errors.required">useforis required</div>-->
+
+            <!--</div>-->
+
+
+        <!--</div>-->
+      </div>
+      <div class="form-group">
+<!--        <div *ngIf="f.submitted&&!issucces"class="alert alert-warning">-->
+<!--          EVENT UPLOAD failed!<br/>{{messeage}}-->
+<!--        </div>-->
+
+
+      <div *ngIf="f.submitted"class="alert alert-warning">
+       <p>"event send successfully"</p>
+      </div>
+
+
+        <button  class="btn btn-primary" >event upload</button>
+
+      </div>
+
+    </form>
+  </div>
+</div>

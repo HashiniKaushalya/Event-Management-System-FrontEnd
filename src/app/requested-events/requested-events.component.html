@@ -1,0 +1,37 @@
+<p>requested-events works!</p>
+<div class="row">
+
+
+  <div class="card text-center " *ngFor="let event of events">
+    <div class="card-header">
+<!--      event type{{event.eventType}}-->
+      <h2 *ngIf="event.eventType=='Event type 1'">Conferance</h2>
+      <h2 *ngIf="event.eventType=='Event type 2'">Sports</h2>
+      <h2 *ngIf="event.eventType=='Event type 3'">Compitition</h2>
+      <h2 *ngIf="event.eventType=='Event type 4'">Culture</h2>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{event.eventName}}</h5>
+      <p class="card-text">{{event.eventTime}}</p>
+      <!--<p class="card-text">event date</p>-->
+      <h2>{{event.eventDate}}</h2>
+
+<!--      <h2>{{event.venue}}</h2>-->
+      <h2 *ngIf="event.venue=='Venue 1'">Aditorium</h2>
+      <h2 *ngIf="event.venue=='Venue 2'">Lagan</h2>
+      <h2 *ngIf="event.venue=='Venue 3'">canteen</h2>
+      <h2 *ngIf="event.venue=='Venue 4'">Old Gym</h2>
+<!--      <h2 *ngIf="event.venue=='Venue 1'">hjk</h2>-->
+      <!--<p class="card-text">event venue</p>-->
+      <!--<p class="card-text">document</p>-->
+      <p class="card-text">{{event.equipment}}</p>
+      <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+    </div>
+    <div class="card-footer text-muted">
+<button class="btn-dark" onclick="abrove(event.id)">aprove the event</button>
+    </div>
+  </div>
+
+
+
+</div>
